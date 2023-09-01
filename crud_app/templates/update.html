@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+    {% block content %}
+
+        <div class="main container mt-5">
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-success">Update</button>
+                <a href="../"><button class="btn btn-secondary">Back</button></a>
+            </form>
+        </div>
+
+    {% endblock %}
