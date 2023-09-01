@@ -41,3 +41,7 @@ def delete(request, id):
         obj.delete()
         return HttpResponseRedirect("/")
     return render(request, "delete.html", context)
+
+
+
+# some comments 
